@@ -1,6 +1,6 @@
 'use client';
 import Link from 'next/link';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, Suspense } from 'react';
 import { useRouter, usePathname, useSearchParams } from 'next/navigation';
 
 import { LuX, LuMenu } from 'react-icons/lu';
@@ -31,21 +31,23 @@ const Nav = () => {
 	};
 	return (
 		<>
-			<nav className=' w-1/3 flex justify-end'>
-				<div className='hidden w-full justify-between md:flex'>
-					<Navlinks />
-				</div>
-				<div className='md:hidden'>
-					<button onClick={toggleNavbar}>
-						{isOpen ? <LuX /> : <LuMenu />}
-					</button>
-				</div>
-			</nav>
-			{isOpen && (
-				<div className='flex basis-full flex-col items-center '>
-					<Navlinks />
-				</div>
-			)}
+			<Suspense>
+				<nav className=' w-1/3 flex justify-end'>
+					<div className='hidden w-full justify-between md:flex'>
+						<Navlinks />
+					</div>
+					<div className='md:hidden'>
+						<button onClick={toggleNavbar}>
+							{isOpen ? <LuX /> : <LuMenu />}
+						</button>
+					</div>
+				</nav>
+				{isOpen && (
+					<div className='flex basis-full flex-col items-center '>
+						<Navlinks />
+					</div>
+				)}
+			</Suspense>
 		</>
 	);
 };
