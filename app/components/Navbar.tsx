@@ -1,3 +1,4 @@
+import { Suspense } from 'react';
 import Logo from './Logo';
 import Nav from './Nav';
 
@@ -5,8 +6,10 @@ export default function Navbar() {
 	return (
 		<header className=' bg-transparent sticky top-0 z-[20] flex flex-wrap mx-auto w-full items-center justify-between text-2xl  h-10'>
 			{/* <div className='mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8'> */}
-			<Logo />
-			<Nav />
+			<Suspense>
+				<Logo />
+				<Nav />
+			</Suspense>
 			{/* </div> */}
 		</header>
 	);

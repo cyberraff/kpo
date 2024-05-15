@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { useState, useEffect, Suspense } from 'react';
 import { useRouter, usePathname, useSearchParams } from 'next/navigation';
 
+
 import { LuX, LuMenu } from 'react-icons/lu';
 const Navlinks = () => {
 	return (
