@@ -1,16 +1,4 @@
-import { FaInstagram, FaTiktok } from 'react-icons/fa';
-import { CiLinkedin } from 'react-icons/ci';
-import { LiaFacebookSquare } from 'react-icons/lia';
-import { FaYoutube, FaTwitter } from 'react-icons/fa';
-
 export default function About() {
-	const icons = [
-		{ id: 1, link: '#', icon: <CiLinkedin /> },
-		{ id: 2, link: '#', icon: <FaInstagram /> },
-		{ id: 3, link: '#', icon: <LiaFacebookSquare /> },
-		{ id: 4, link: '#', icon: <FaYoutube /> },
-		{ id: 5, link: '#', icon: <FaTwitter /> },
-	];
 	return (
 		<div id='about' className=' text-center pt-16 pb-10  mt-4 px-4'>
 			<h2 className=' text-xl pb-4'>
@@ -38,18 +26,7 @@ export default function About() {
 				&ldquo; Why? &rsquo;cus I belive people are God&rsquo;s
 				favourite creation, and Art speaks to the heart of men
 			</p>
-			<div className=' flex pt-20 justify-center space-x-5 text-xl'>
-				{icons.map((icon) => {
-					return (
-						<a
-							key={icon.id}
-							href={icon.link}
-							className=' p-2 bg-gray-400'>
-							{icon.icon}
-						</a>
-					);
-				})}
-			</div>
+		
 		</div>
 	);
 }
