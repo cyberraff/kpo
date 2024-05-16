@@ -8,7 +8,7 @@ const Navlinks = () => {
 	return (
 		<>
 			<Link href='#about'>About</Link>
-			<Link href='#projects'>Projects</Link>
+			<Link href='#portfolio'>Projects</Link>
 			<Link href='#contact'>Contact</Link>
 		</>
 	);

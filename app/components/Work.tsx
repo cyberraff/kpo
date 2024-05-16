@@ -59,7 +59,7 @@ export function VideoCarousel() {
 export default function Work() {
 	return (
 		<>
-			<div id='portfolio' className=' '>
+			<div id='portfolio' className='pt-16 '>
 				<p className=' text-2xl font-semibold py-4'>My Work</p>
 				<div>
 					<ImageCarousel />
