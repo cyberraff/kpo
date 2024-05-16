@@ -3,7 +3,6 @@ import Link from 'next/link';
 import { useState, useEffect, Suspense } from 'react';
 import { useRouter, usePathname, useSearchParams } from 'next/navigation';
 
-
 import { LuX, LuMenu } from 'react-icons/lu';
 const Navlinks = () => {
 	return (
@@ -33,7 +32,7 @@ const Nav = () => {
 	return (
 		<>
 			<Suspense>
-				<nav className=' w-1/3 flex justify-end'>
+				<nav className=' w-1/3 flex justify-end text-base'>
 					<div className='hidden w-full justify-between md:flex'>
 						<Navlinks />
 					</div>
@@ -44,7 +43,7 @@ const Nav = () => {
 					</div>
 				</nav>
 				{isOpen && (
-					<div className='flex basis-full flex-col items-center '>
+					<div className='flex basis-full flex-col items-center bg-white '>
 						<Navlinks />
 					</div>
 				)}
