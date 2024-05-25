@@ -37,7 +37,7 @@ const Nav = () => {
 						<Navlinks />
 					</div> */}
 					<div className='text-2xl'>
-						<button onClick={toggleNavbar}>
+						<button aria-label='Toggle Menu' onClick={toggleNavbar}>
 							{isOpen ? <LuX /> : <LuMenu />}
 						</button>
 					</div>

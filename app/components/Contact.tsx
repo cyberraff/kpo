@@ -38,6 +38,7 @@ export default function Contact() {
 					{icons.map((icon) => {
 						return (
 							<a
+								aria-label={icon.id}
 								key={icon.id}
 								href={icon.link}
 								className=' p-2 text-2xl bg-[#fff]'>
