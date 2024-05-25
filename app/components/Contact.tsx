@@ -16,7 +16,7 @@ export default function Contact() {
 
 	return (
 		<>
-			<div id='contact' className=' bg-[#a9a9a9] w-full pb-12'>
+			<div id='contact' className=' bg-[#a9a9a939] w-full pb-12'>
 				<div className=' text-center px-4 pt-20'>
 					<p className=' font-bold text-lg'>Hello! </p>
 					<p className='pt-4 px-4 sm:px-8 md:px-16 lg:px-24 '>
@@ -40,7 +40,7 @@ export default function Contact() {
 							<a
 								key={icon.id}
 								href={icon.link}
-								className=' p-2 text-2xl bg-[#8b8b8b]'>
+								className=' p-2 text-2xl bg-[#fff]'>
 								{icon.icon}
 							</a>
 						);

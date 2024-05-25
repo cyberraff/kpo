@@ -33,17 +33,17 @@ const Nav = () => {
 		<>
 			<Suspense>
 				<nav className=' w-1/3 flex justify-end text-base'>
-					<div className='hidden w-full justify-between md:flex'>
+					{/* <div className='hidden w-full justify-between md:flex'>
 						<Navlinks />
-					</div>
-					<div className='md:hidden'>
+					</div> */}
+					<div className='text-2xl'>
 						<button onClick={toggleNavbar}>
 							{isOpen ? <LuX /> : <LuMenu />}
 						</button>
 					</div>
 				</nav>
 				{isOpen && (
-					<div className='flex basis-full flex-col items-center bg-white '>
+					<div className='flex basis-full flex-col items-end bg-white text-base '>
 						<Navlinks />
 					</div>
 				)}

@@ -12,11 +12,11 @@ import Image from 'next/image';
 export function ImageCarousel() {
 	return (
 		<div>
-			<p className='  font-semibold w-fit pr-1 my-4 border-b-2 border-[#a9a9a9]  pt-6'>
+			<p className='  font-semibold pr-1 my-4 border-b-2 text-xl border-[#a9a9a9]  pt-6 text-end'>
 				Image Reels
 			</p>
 
-			<Carousel className='w-full max-w-sm text-black'>
+			<Carousel className=' w-[85%] mx-auto text-black'>
 				<CarouselContent>
 					{Array.from({ length: 5 }).map((_, index) => (
 						<CarouselItem key={index}>
@@ -37,12 +37,12 @@ export function ImageCarousel() {
 }
 export function VideoCarousel() {
 	return (
-		<div>
-			<p className=' font-semibold w-fit pr-1 my-4 border-b-2 border-[#a9a9a9] pt-6'>
+		<div className=''>
+			<p className=' font-semibold  pr-1 my-4 border-b-2 text-xl border-[#a9a9a9] pt-6 text-end '>
 				Video Reels
 			</p>
 
-			<Carousel className='w-full max-w-sm'>
+			<Carousel className='w-[85%] mx-auto'>
 				<CarouselContent>
 					{Array.from({ length: 5 }).map((_, index) => (
 						<CarouselItem key={index}>
@@ -65,11 +65,11 @@ export function VideoCarousel() {
 export default function Work() {
 	return (
 		<>
-			<div id='portfolio' className='py-16 px-4 w-full '>
+			<div id='portfolio' className='py-16 px-4 w-full text-end '>
 				<p className=' text-2xl font-semibold py-4'>
 					Welcome to My Portfolio!
 				</p>
-				<p>
+				<p className='  w-[80%] ml-auto'>
 					Dive into my projects and see the creativity and hard work
 					behind each one. From innovative designs to successful
 					collaborations, I’m excited to share what I’ve been up to.
