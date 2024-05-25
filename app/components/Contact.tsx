@@ -7,11 +7,11 @@ import Link from 'next/link';
 
 export default function Contact() {
 	const icons = [
-		{ id: 1, link: '#', icon: <CiLinkedin /> },
-		{ id: 2, link: '#', icon: <FaInstagram /> },
-		{ id: 3, link: '#', icon: <LiaFacebookSquare /> },
-		{ id: 4, link: '#', icon: <CiYoutube /> },
-		{ id: 5, link: '#', icon: <FaXTwitter /> },
+		{ id: 1, label: 'linkedIn', link: '#', icon: <CiLinkedin /> },
+		{ id: 2, label: 'instagram', link: '#', icon: <FaInstagram /> },
+		{ id: 3, label: 'facebook', link: '#', icon: <LiaFacebookSquare /> },
+		{ id: 4, label: 'youtube', link: '#', icon: <CiYoutube /> },
+		{ id: 5, label: 'twitter', link: '#', icon: <FaXTwitter /> },
 	];
 
 	return (
@@ -38,7 +38,7 @@ export default function Contact() {
 					{icons.map((icon) => {
 						return (
 							<a
-								aria-label={icon.id}
+								aria-label={icon.label}
 								key={icon.id}
 								href={icon.link}
 								className=' p-2 text-2xl bg-[#fff]'>
